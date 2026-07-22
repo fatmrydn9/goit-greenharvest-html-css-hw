@@ -4,7 +4,10 @@ body {
 }
 
 header {
+<<<<<<< HEAD
   border: 1px solid red;
+=======
+>>>>>>> main
   width: 100%;
   height: 100px;
   background-color: #576f35;
@@ -19,21 +22,54 @@ header {
 }
 
 .logo-container {
+<<<<<<< HEAD
   border: 1px solid purple;
+=======
+>>>>>>> main
   width: 168px;
   height: 16px;
 }
 
 .hamburger-menu {
+<<<<<<< HEAD
   width: 32px;
   height: 32px;
   border: 1px solid blue;
+=======
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+  width: 32px;
+  height: 32px;
+  padding: 7px 5px;
+>>>>>>> main
 }
+
+.hamburger-menu> :not(:nth-child(2)) {
+ display: block;
+  width: 22px;
+  height: 2.4px;
+  background-color: #FBFBFB;
+  border-radius: 2.4px;
+}
+.hamburger-menu> :nth-child(2) {
+ display: block;
+  width: 15px;
+  height: 2.4px;
+  background-color: #FBFBFB;
+  border-radius: 2.4px;
+}
+
 
 main {
   width: 100%;
   background-color: #576f35;
   padding: 0 20px;
+<<<<<<< HEAD
+=======
+  overflow: visible;
+  margin-top: 0;
+>>>>>>> main
 }
 
 .hero-section {
@@ -58,6 +94,31 @@ h1 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+<<<<<<< HEAD
+=======
+}
+
+#hero-img-container{
+ width: 100%;
+ min-width: 375px;
+ background-color: #576f35;
+}
+.hero-image {
+ width: 100%;
+ min-width: 375px;
+ background-color: #576f35;
+ position: absolute;
+ display: block;
+ left: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+    image-set(
+      url(./images/basket-mobile.jpg) 1x,
+      url(./images/basket-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+>>>>>>> main
 }
 
 .menu {
@@ -152,6 +213,7 @@ h1 {
   background-color: #fbfbfb;
   color: #7a3145;
 }
+<<<<<<< HEAD
 
 /* How It Works Section */
 .how-it-works {
@@ -257,3 +319,5 @@ h1 {
   font-weight: 700;
   color: #141414;
 }
+=======
+>>>>>>> main
