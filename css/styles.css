@@ -3,6 +3,8 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 0
 }
 body {
+  margin: 0;
+  padding: 0;
   min-width: 375px;
   font-family: "Inter Tight", sans-serif;
 }
@@ -59,6 +61,7 @@ main {
 
 .hero-section {
   width: 100%;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -90,6 +93,7 @@ h1 {
     min-width: 100%;
     background-color: #576f35;
 }
+
 .hero-image {
   width: 100%;
     min-width: 0;
