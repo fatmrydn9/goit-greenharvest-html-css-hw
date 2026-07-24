@@ -4,10 +4,6 @@ body {
 }
 
 header {
-<<<<<<< HEAD
-  border: 1px solid red;
-=======
->>>>>>> main
   width: 100%;
   height: 100px;
   background-color: #576f35;
@@ -22,54 +18,39 @@ header {
 }
 
 .logo-container {
-<<<<<<< HEAD
-  border: 1px solid purple;
-=======
->>>>>>> main
   width: 168px;
   height: 16px;
 }
 
 .hamburger-menu {
-<<<<<<< HEAD
-  width: 32px;
-  height: 32px;
-  border: 1px solid blue;
-=======
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 32px;
   height: 32px;
   padding: 7px 5px;
->>>>>>> main
 }
 
-.hamburger-menu> :not(:nth-child(2)) {
- display: block;
+.hamburger-menu > :not(:nth-child(2)) {
+  display: block;
   width: 22px;
   height: 2.4px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-radius: 2.4px;
 }
-.hamburger-menu> :nth-child(2) {
- display: block;
+.hamburger-menu > :nth-child(2) {
+  display: block;
   width: 15px;
   height: 2.4px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-radius: 2.4px;
 }
-
 
 main {
   width: 100%;
-  background-color: #576f35;
-  padding: 0 20px;
-<<<<<<< HEAD
-=======
+  padding: 0;
   overflow: visible;
   margin-top: 0;
->>>>>>> main
 }
 
 .hero-section {
@@ -94,31 +75,29 @@ h1 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-<<<<<<< HEAD
-=======
 }
 
-#hero-img-container{
- width: 100%;
- min-width: 375px;
- background-color: #576f35;
+#hero-img-container {
+  width: 100%;
+  min-width: 375px;
+  background-color: #576f35;
 }
 .hero-image {
- width: 100%;
- min-width: 375px;
- background-color: #576f35;
- position: absolute;
- display: block;
- left: 0;
+  width: 100%;
+  min-width: 375px;
+  background-color: #576f35;
+  position: absolute;
+  display: block;
+  left: 0;
   background-image:
     linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
     image-set(
       url(./images/basket-mobile.jpg) 1x,
-      url(./images/basket-mobile@2x.jpg) 2x);
+      url(./images/basket-mobile@2x.jpg) 2x
+    );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
->>>>>>> main
 }
 
 .menu {
@@ -213,7 +192,6 @@ h1 {
   background-color: #fbfbfb;
   color: #7a3145;
 }
-<<<<<<< HEAD
 
 /* How It Works Section */
 .how-it-works {
@@ -319,5 +297,93 @@ h1 {
   font-weight: 700;
   color: #141414;
 }
-=======
->>>>>>> main
+
+.advertisement {
+  width: 100%;
+  padding: 80px 20px;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+.advertisement .container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.advertisement-title {
+  width: 100%;
+  max-width: 335px;
+  margin: 0;
+
+  font-family: "Inter Tight", sans-serif;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 600;
+  letter-spacing: -1, 5em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.advertisement-accent {
+  display: block;
+  width: fit-content;
+
+  padding: 3px 10px;
+  border-radius: 12px;
+  color: #fbfbfb;
+  background-color: #576f35;
+}
+/* Vegetables */ 
+
+.vegetables {
+  padding: 80px 20px;
+  background-color: #7a3145;
+}
+
+.vegetables-title {
+  margin: 0 0 20px;
+
+  font-family: "Inter Tight", sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 600;
+  letter-spacing: -0.015;
+
+  color: #fbfbfb;
+  text-transform: uppercase;
+}
+
+.vegetables-title-accent {
+  color: #d4bfc4;
+}
+
+.vegetables-text {
+  margin: 0 0 40px;
+
+  font-family: "Inter Tight", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+
+  color: #fbfbfb;
+}
+
+.vegetables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vegetables-item {
+  width: 100%;
+  padding: 32px 24px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+}
