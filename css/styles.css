@@ -1,6 +1,12 @@
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 body {
   margin: 0;
@@ -89,25 +95,27 @@ h1 {
 
 #hero-img-container {
   width: 100vw;
-    margin-left: calc(50% - 50vw);
-    min-width: 100%;
-    background-color: #576f35;
+  margin-left: calc(50% - 50vw);
+  min-width: 100%;
+  background-color: #576f35;
 }
 
 .hero-image {
   width: 100%;
-    min-width: 0;
-    background-color: #576f35;
-    display: block;
-    height: auto;
-    left: 0;
-    background-image:
-      linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-      image-set(url(./images/basket-mobile.jpg) 1x,
-        url(./images/basket-mobile@2x.jpg) 2x);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  min-width: 0;
+  background-color: #576f35;
+  display: block;
+  height: auto;
+  left: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+    image-set(
+      url(./images/basket-mobile.jpg) 1x,
+      url(./images/basket-mobile@2x.jpg) 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .menu {
@@ -406,7 +414,7 @@ h1 {
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   gap: 40px;
 }
 
@@ -425,8 +433,8 @@ h1 {
   letter-spacing: -1.5%;
 }
 
-.reviews-container h2>span {
-  color: #576F35;
+.reviews-container h2 > span {
+  color: #576f35;
 }
 
 .reviews-container p {
@@ -453,7 +461,6 @@ h1 {
   margin: 0;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -462,9 +469,9 @@ h1 {
 
 .carousel-card {
   flex: 0 0 335px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding: 20px 16px;
-  border: 1px solid #D4BFC4;
+  border: 1px solid #d4bfc4;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -495,11 +502,76 @@ h1 {
   gap: 8px;
 }
 
+/* Tablet */
 
- /* Tablet */
-
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .how-it-works-image-box {
-  padding: 100px 64px;
+    padding: 100px 64px;
+  }
+  .ordering-steps {
+    padding: 100px 159px;
+  }
+  .advertisement {
+    padding: 100px 32px;
+  }
+
+  .advertisement-title {
+    max-width: 704px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .vegetables {
+    padding: 100px 32px;
+  }
+
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px 20px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 20px) / 2);
+    padding: 32px 30px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .how-it-works-container {
+    flex-direction: row;
+  }
+
+  .how-it-works-image-box,
+  .ordering-steps {
+    width: 50%;
+  }
+
+  .how-it-works-image-box {
+    padding: 100px;
+  }
+
+  .ordering-steps {
+    padding: 100px;
+  }
+  .advertisement {
+    padding: 100px;
+  }
+
+  .advertisement-title {
+    max-width: 1054px;
+    font-size: 76px;
+    line-height: 80px;
+  }
+  .vegetables {
+    padding: 100px;
+  }
+
+  .vegetables-list {
+    gap: 28px 20px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 40px) / 3);
   }
 }
