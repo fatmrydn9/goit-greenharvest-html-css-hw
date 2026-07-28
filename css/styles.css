@@ -204,6 +204,7 @@ h1 {
 }
 
 /* How It Works Section */
+
 .how-it-works {
   width: 100%;
 }
@@ -492,4 +493,13 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+
+ /* Tablet */
+
+ @media screen and (min-width: 768px) {
+  .how-it-works-image-box {
+  padding: 100px 64px;
+  }
 }
