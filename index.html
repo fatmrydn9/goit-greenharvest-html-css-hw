@@ -20,9 +20,10 @@
     <header>
       <div id="header-content">
         <div class="logo-container">
-          <div class="logo">
-            <img src="./images/logo-mobile.svg" alt="logo" />
-          </div>
+          <a href="#" class="logo">
+            <img src="./images/logo-mobile.svg" class="mobile-logo" alt="Logo">
+            <img src="./images/logo.svg" class="tablet-logo" alt="Logo">
+          </a>
         </div>
         <div class="hamburger-menu">
           <span></span>
@@ -42,15 +43,21 @@
         </p>
       </div>
       <div id="hero-img-container">
-        <img
-          class="hero-image"
-          src="./images/basket-mobile.jpg"
-          alt="basket full of vegetables"
-        />
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
+        
+          <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
+        
+          <img class="hero-image" src="./images/basket-mobile.jpg" srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
+        </picture>
       </div>
       <div class="menu">
         <!--is-open-->
-        <div class="close-btn"></div>
+        <div class="close-btn">
+          <svg class="icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </div>
         <div class="menu-container">
           <ul class="menu-list">
             <li><a href="#">How İt Works</a></li>
