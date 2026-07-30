@@ -34,6 +34,10 @@ header {
   height: 16px;
 }
 
+.tablet-logo {
+  display: none;
+}
+
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -72,7 +76,6 @@ main {
   flex-direction: column;
   gap: 20px;
   background-color: #576f35;
-  padding: 0 20px;
 }
 
 h1 {
@@ -137,13 +140,13 @@ h1 {
   z-index: 10;
 }
 
-.close-btn {
+.icon {
   width: 32px;
   height: 32px;
-  border: 1px solid purple;
   position: absolute;
   right: 20px;
   top: 20px;
+  color: #fbfbfb;
 }
 
 .menu-container {
@@ -774,6 +777,56 @@ background-color: #7A3145;
   gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    padding: 32px;
+  }
+
+  .logo-container {
+    width: 216px;
+    height: 20px;
+  }
+  .mobile-logo {
+    display: none;
+  }
+
+  .tablet-logo {
+    display: block;
+  }
+
+  .hamburger-menu {
+    width: 40px;
+    height: 40px;
+    padding: 10px 6.67px;
+  }
+  .hamburger-menu > :not(:nth-child(2)) {
+    width: 26.67px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  .hamburger-menu > :nth-child(2) {
+    width: 20px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  .hero-paragraph {
+    width: 603px;
+    font-size: 16px;
+  }
+
+  .hero-image {
+    background-image:
+      linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      image-set(
+        url(./images/basket-tablet.jpg) 1x,
+        url(./images/basket-mobile@2x.jpg) 2x
+      );
 /* Tablet */
 
 @media screen and (min-width: 768px) {
