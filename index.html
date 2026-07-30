@@ -21,35 +21,19 @@
       <div id="header-content">
         <div class="logo-container">
           <a href="#" class="logo">
-            <img src="./images/logo-mobile.svg" class="mobile-logo" alt="Logo">
-            <img src="./images/logo.svg" class="tablet-logo" alt="Logo">
+            <img
+              src="./images/logo-mobile.svg"
+              class="mobile-logo"
+              alt="Logo"
+            />
+            <img src="./images/logo.svg" class="tablet-logo" alt="Logo" />
           </a>
         </div>
         <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg class="icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="hero-section">
-        <h1>organic vegetables to your diet today!</h1>
-        <p class="hero-paragraph">
-          Our expertly curated vegetable baskets are made with the freshest,
-          highest quality vegetables available. Fresh Harvest Box has got you
-          covered. Fresh, high-quality vegetables in expertly curated vegetable
-          baskets delivered to you.
-        </p>
-      </div>
-      <div id="hero-img-container">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
-        
-          <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
-        
-          <img class="hero-image" src="./images/basket-mobile.jpg" srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
-        </picture>
       </div>
       <div class="menu">
         <!--is-open-->
@@ -67,15 +51,58 @@
         </div>
         <button id="shop-btn">SHOP NOW</button>
       </div>
+      <div class="menu-backdrop"></div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1>organic vegetables to your diet today!</h1>
+          <p class="hero-paragraph">
+            Our expertly curated vegetable baskets are made with the freshest,
+            highest quality vegetables available. Fresh Harvest Box has got you
+            covered. Fresh, high-quality vegetables in expertly curated vegetable
+            baskets delivered to you.
+          </p>
+        </div>
+        <div id="hero-img-container">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
+        
+            <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
+        
+            <img class="hero-image" src="./images/basket-mobile.jpg"
+              srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
+          </picture>
+        </div>
+      </section>
       <!--fatmanur How it Works Section-->
       <section class="how-it-works">
         <div class="how-it-works-container">
           <div class="how-it-works-image-box">
-            <img
-              class="how-it-works-image"
-              src="./images/woman-cooking-mobile.jpg"
-              alt="Woman preparing vegetables"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/woman-cooking-desktop.jpg    1x,
+                  ./images/woman-cooking-desktop@2x.jpg 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/woman-cooking-tablet.jpg    1x,
+                  ./images/woman-cooking-tablet@2x.jpg 2x
+                "
+              />
+
+              <img
+                class="how-it-works-image"
+                src="./images/woman-cooking-mobile.jpg"
+                srcset="./images/woman-cooking-mobile@2x.jpg 2x"
+                alt="Woman preparing vegetables"
+              />
+            </picture>
           </div>
           <div class="ordering-steps">
             <h2 class="ordering-steps-title">
@@ -260,50 +287,66 @@
       </div>
     </main>
 
-<!-- berkay your order section -->
+    <!-- berkay your order section -->
 
-<section class="harvest">
- <div class="harvest-container">
-  <div class="harvest-intro">
-    <h2 class="harvest-title">
-      FRESH <br> <span class="accent-pink">HARVEST</span> BOX HAS GOT YOU COVERED
-    </h2>
-   <p class="harvest-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-  </div>
+    <section class="harvest">
+      <div class="harvest-container">
+        <div class="harvest-intro">
+          <h2 class="harvest-title">
+            FRESH <br />
+            <span class="accent-pink">HARVEST</span> BOX HAS GOT YOU COVERED
+          </h2>
+          <p class="harvest-text">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+        </div>
 
-  <div class="harvest-form-card">
-    <h3 class="harvest-form-title">
-      ORDERING <span class="accent-chianti">FROM US</span> IS QUICK AND EASY! FILL OUT<span class="accent-green"> THE FORM</span> BELOW AND WE WILL <br>
-      CONTACT YOU !
-    </h3>
+        <div class="harvest-form-card">
+          <h3 class="harvest-form-title">
+            ORDERING <span class="accent-chianti">FROM US</span> IS QUICK AND
+            EASY! FILL OUT<span class="accent-green"> THE FORM</span> BELOW AND
+            WE WILL <br />
+            CONTACT YOU !
+          </h3>
 
-    <form class="harvest-form">
-      <input type="text" placeholder="Full Name" class="harvest-input">
-      <input type="email" placeholder="Email" class="harvest-input">
-      <textarea placeholder="Comment" class="harvest-textarea"></textarea>
-      <button type="submit" class="harvest-button">SEND</button>
-    </form>
-  </div>
+          <form class="harvest-form">
+            <input type="text" placeholder="Full Name" class="harvest-input" />
+            <input type="email" placeholder="Email" class="harvest-input" />
+            <textarea placeholder="Comment" class="harvest-textarea"></textarea>
+            <button type="submit" class="harvest-button">SEND</button>
+          </form>
+        </div>
 
-  <div class="harvest-social-card">
-    <img src="images/smoothie-mobile@2x.jpg" alt="smoothie photo" class="harvest-image">
-    <p class="harvest-social-text">Follow us on our social networks:</p>
-    <div class="harvest-social-links">
-      <span>INSTAGRAM&nbsp;&nbsp;/&nbsp;&nbsp;FACEBOOK&nbsp;&nbsp;/</span>
-      <span>YOUTUBE</span>
-    </div>
-  </div>
-</div>
-</section>
- 
+        <div class="harvest-social-card">
+          <img
+            src="images/smoothie-mobile@2x.jpg"
+            alt="smoothie photo"
+            class="harvest-image"
+          />
+          <p class="harvest-social-text">Follow us on our social networks:</p>
+          <div class="harvest-social-links">
+            <span>INSTAGRAM&nbsp;&nbsp;/&nbsp;&nbsp;FACEBOOK&nbsp;&nbsp;/</span>
+            <span>YOUTUBE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="images/logo-mobile.svg" alt="Green Harvest logo" width="168" height="16">
+          <img
+            src="images/logo-mobile.svg"
+            alt="Green Harvest logo"
+            width="168"
+            height="16"
+          />
         </div>
         <p class="footer-description">
-          Whether you're looking for a healthy snack or a thoughtful gift, 
-          our fruit baskets are the perfect choice.
+          Whether you're looking for a healthy snack or a thoughtful gift, our
+          fruit baskets are the perfect choice.
         </p>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
@@ -312,13 +355,13 @@
             <li><a href="#" class="footer-nav-link">REVIEWS</a></li>
           </ul>
         </nav>
-    
+
         <p class="footer-phone">+380 (68) 443-94-26</p>
-    
+
         <address class="footer-address">
           1678 S. Pioneer Road Salt Lake City UT 84104
         </address>
-    
+
         <div class="footer-bottom">
           <div class="footer-links">
             <a href="#" class="footer-bottom-link">Privacy Policy</a>
@@ -327,7 +370,6 @@
           </div>
           <p class="footer-copyright">©Green Harvest 2023</p>
         </div>
-    
       </div>
     </footer>
   </body>

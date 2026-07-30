@@ -17,21 +17,17 @@ body {
 
 header {
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #576f35;
-  padding: 28px 20px 0 20px;
+  padding: 20px;
 }
 
 #header-content {
   width: 100%;
+  height: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo-container {
-  width: 168px;
-  height: 16px;
 }
 
 .tablet-logo {
@@ -39,27 +35,7 @@ header {
 }
 
 .hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32px;
   height: 32px;
-  padding: 7px 5px;
-}
-
-.hamburger-menu > :not(:nth-child(2)) {
-  display: block;
-  width: 22px;
-  height: 2.4px;
-  background-color: #fbfbfb;
-  border-radius: 2.4px;
-}
-.hamburger-menu > :nth-child(2) {
-  display: block;
-  width: 15px;
-  height: 2.4px;
-  background-color: #fbfbfb;
-  border-radius: 2.4px;
 }
 
 main {
@@ -70,12 +46,19 @@ main {
 }
 
 .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #576f35;
+}
+.hero-container {
   width: 100%;
+  max-width: 704px;
   padding: 0 20px;
+  padding-top: 28px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #576f35;
 }
 
 h1 {
@@ -98,8 +81,7 @@ h1 {
 
 #hero-img-container {
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-  min-width: 100%;
+  max-width: 100%;
   background-color: #576f35;
 }
 
@@ -143,12 +125,15 @@ h1 {
 .icon {
   width: 32px;
   height: 32px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
   color: #fbfbfb;
 }
 
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: auto;
+}
 .menu-container {
   display: flex;
   position: absolute;
@@ -325,12 +310,14 @@ h1 {
 .harvest {
   width: 100%;
   min-width: 320px;
-  background-color: #576F35;
+  background-color: #576f35;
+  background-color: #576f35;
   padding: 80px 20px;
 }
 
 .harvest-container {
- width: 100%;
+  width: 100%;
+  width: 100%;
   height: auto;
   box-sizing: border-box;
   display: flex;
@@ -347,15 +334,18 @@ h1 {
 
 .harvest-title {
   font-weight: 600;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  color: #fbfbfb;
   line-height: 52px;
   font-size: 48px;
   margin: 0;
 }
 
 .harvest-text {
-  font-family: 'Inter Tight', sans-serif;
-  color: #FBFBFB;
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
   font-weight: 500;
   max-width: 335px;
   font-size: 14px;
@@ -364,7 +354,8 @@ h1 {
 }
 
 .harvest-form-card {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
+  background-color: #fbfbfb;
   border-radius: 30px;
   width: 335px;
   height: 552px;
@@ -372,7 +363,8 @@ h1 {
 }
 
 .harvest-form-title {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-size: 28px;
   font-weight: 600;
   min-height: 140px;
@@ -382,11 +374,13 @@ h1 {
 }
 
 .accent-pink {
-  color:#D4BFC4;
+  color: #d4bfc4;
+  color: #d4bfc4;
 }
 
 .accent-chianti {
-  color: #7A3145;
+  color: #7a3145;
+  color: #7a3145;
 }
 
 .accent-green {
@@ -397,7 +391,8 @@ h1 {
   padding: 0 20px 40px 20px;
 }
 
-.harvest-input{
+.harvest-input {
+.harvest-input {
   height: 48px;
   width: 295px;
   margin-bottom: 16px;
@@ -410,7 +405,8 @@ h1 {
   border-radius: 30px;
   padding: 16px 20px;
   font-size: 14px;
-  font-family: 'Inter Tight', sans-serif;;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .harvest-textarea {
@@ -429,8 +425,10 @@ h1 {
 
 .harvest-button {
   width: 100%;
-  background-color: #7A3145;
-  color: #FBFBFB;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  background-color: #7a3145;
+  color: #fbfbfb;
   border: none;
   border-radius: 30px;
   padding: 16px;
@@ -441,7 +439,8 @@ h1 {
 }
 
 .harvest-social-card {
-  background-color: #7A3145;
+  background-color: #7a3145;
+  background-color: #7a3145;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 30px;
@@ -459,7 +458,8 @@ h1 {
 }
 
 .harvest-social-text {
-  color: #D4BFC4;
+  color: #d4bfc4;
+  color: #d4bfc4;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -469,22 +469,28 @@ h1 {
 .harvest-social-links {
   display: flex;
   flex-direction: column;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  color: #fbfbfb;
   font-weight: 600;
   font-size: 18px;
   max-width: 295px;
   letter-spacing: -1.5%;
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   margin: 0 0 40px 0;
   line-height: 20px;
   gap: 8px;
 }
 
 .footer {
- min-width: 320px;
- width: 100%;
-padding: 40px 20px;
-background-color: #7A3145;
+  min-width: 320px;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #7a3145;
+  min-width: 320px;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #7a3145;
 }
 
 .footer-container {
@@ -502,8 +508,10 @@ background-color: #7A3145;
 }
 
 .footer-description {
-  font-family: 'Inter Tight', sans-serif;
-  color: #FBFBFB;
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
   width: 335px;
   max-width: 295px;
   height: 60px;
@@ -516,7 +524,8 @@ background-color: #7A3145;
 }
 
 .footer-nav {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   width: 227px;
   height: 124px;
   margin: 40px 0 40px 0;
@@ -537,7 +546,8 @@ background-color: #7A3145;
 }
 
 .footer-nav-link {
-  color: #FBFBFB;
+  color: #fbfbfb;
+  color: #fbfbfb;
   font-size: 32px;
   font-weight: 600;
   text-decoration: none;
@@ -545,17 +555,20 @@ background-color: #7A3145;
 
 .footer-phone {
   font-weight: 700;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  color: #fbfbfb;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
 }
 
 .footer-address {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-style: normal;
   font-size: 14px;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  color: #fbfbfb;
   margin: 14px 0 80px 0;
   max-width: 179px;
   font-weight: 700;
@@ -575,18 +588,22 @@ background-color: #7A3145;
 }
 
 .footer-bottom-link {
-  color: #D4BFC4;
+  color: #d4bfc4;
+  color: #d4bfc4;
   text-decoration: none;
 }
 
 .footer-divider {
-  color: #D4BFC4;
+  color: #d4bfc4;
+  color: #d4bfc4;
   margin: 0 8px;
 }
 
 .footer-copyright {
-  font-family: 'Inter Tight', sans-serif;
-  color: #D4BFC4;
+  font-family: "Inter Tight", sans-serif;
+  color: #d4bfc4;
+  font-family: "Inter Tight", sans-serif;
+  color: #d4bfc4;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -694,10 +711,11 @@ background-color: #7A3145;
 }
 
 .text-container {
-  height: 236px;
+  max-width: 553px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .reviews-container h2 {
@@ -750,10 +768,9 @@ background-color: #7A3145;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-
+  gap: 24px;
   scroll-snap-align: center;
 }
 
@@ -794,21 +811,28 @@ background-color: #7A3145;
     display: block;
   }
 
-  .hamburger-menu {
-    width: 40px;
-    height: 40px;
-    padding: 10px 6.67px;
-  }
-  .hamburger-menu > :not(:nth-child(2)) {
-    width: 26.67px;
-    height: 4px;
-    border-radius: 4px;
+  .hero-container {
+    padding-top: 16px;
   }
 
-  .hamburger-menu > :nth-child(2) {
-    width: 20px;
-    height: 4px;
-    border-radius: 4px;
+  .hamburger-menu .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .close-btn .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-container {
+    width: 123px;
+  }
+
+  .menu-list li {
+    padding: 12px;
+  }
+
+  .menu-list a {
+    font-size: 16px;
   }
 
   h1 {
@@ -827,6 +851,54 @@ background-color: #7A3145;
         url(./images/basket-tablet.jpg) 1x,
         url(./images/basket-mobile@2x.jpg) 2x
       );
+  }
+
+  .menu.is-open {
+    width: 50vw;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 10;
+  }
+
+  .menu-backdrop {
+    display: none;
+  }
+
+  .menu.is-open ~ .menu-backdrop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .text-container {
+    height: 192px;
+    gap: 24px;
+  }
+
+  .reviews-container h2 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .carousel-container {
+    height: 248px;
+    max-width: 704px;
+  }
+
+  .carousel-track {
+    gap: 24px;
+  }
+
+  .carousel-card p {
+    font-size: 16px;
+  }
+}
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -879,6 +951,7 @@ background-color: #7A3145;
   .ordering-steps {
     padding: 100px;
   }
+
   .advertisement {
     padding: 100px;
   }
@@ -888,15 +961,123 @@ background-color: #7A3145;
     font-size: 76px;
     line-height: 80px;
   }
+
   .vegetables {
     padding: 100px;
   }
 
   .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 28px 20px;
   }
 
   .vegetables-item {
     width: calc((100% - 40px) / 3);
   }
+
+  header{
+    padding: 32px 100px;
+  }
+  .hero-section {
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0 100px;
+  }
+
+    .hero-container{
+      max-width: 504px;
+      width: 564px;
+      gap: 128px;
+      padding: 0;
+    }
+
+  .hero-paragraph{
+    width: 472px;
+    margin-bottom: 0;
+  }
+
+  #hero-img-container {
+    width: 50%;
+    min-height: 796px;
+  }
+
+  .hero-image {
+    position: absolute;
+    width: 50%;
+    min-height: 892px;
+    max-height: 892px;
+    right: 0;
+    left: auto;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .menu {
+    width: 498px;
+    height: 52px;
+    right: 100px;
+    left: auto;
+    top: 32px;
+    position: absolute;
+    display: flex;
+    z-index: 99;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    left: 0;
+    top: 0;
+    right: auto;
+    transform: inherit;
+    width: 321px;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    width: 321px;
+    gap: 8px;
+  }
+
+  .menu-list li {
+    height: 44px;
+    border: 1px solid #fbfbfb;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  #shop-btn {
+    width: 157px;
+    height: 52px;
+    top: 0;
+    right: 0;
+    left: auto;
+    align-self: center;
+  }
+  #shop-btn:hover {
+    background-color: rgba(212, 191, 196, 1);
+    color: rgba(122, 49, 69, 1);
+  }
+  
+    .reviews-container{
+      padding: 100px;
+    }
+    .carousel-container {
+      height: 248px;
+      min-width: 1080px;
+    }
 }
