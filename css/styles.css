@@ -320,15 +320,15 @@ h1 {
 /* berkay your order section */
 
 .harvest {
-  width: 400px;
-  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  background-color: #576F35;
+  padding: 80px 20px;
 }
 
 .harvest-container {
-  background-color: #576F35;
-  width: 375px;
-  height: 1536px;
-  margin: 0 auto;
+ width: 100%;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -478,8 +478,10 @@ h1 {
 }
 
 .footer {
-  margin: 0 auto;
-  width: 400px;
+ min-width: 320px;
+ width: 100%;
+padding: 40px 20px;
+background-color: #7A3145;
 }
 
 .footer-container {
@@ -487,12 +489,7 @@ h1 {
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #7A3145;
-  width: 375px;
-  height: 584px;
-  margin: 0 auto;
-  padding: 40px 20px 80px 20px;
-  
+  width: 100%;
 }
 
 .footer-logo {
