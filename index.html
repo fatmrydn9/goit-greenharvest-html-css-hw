@@ -26,32 +26,12 @@
           </a>
         </div>
         <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg class="icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="hero-section">
-        <h1>organic vegetables to your diet today!</h1>
-        <p class="hero-paragraph">
-          Our expertly curated vegetable baskets are made with the freshest,
-          highest quality vegetables available. Fresh Harvest Box has got you
-          covered. Fresh, high-quality vegetables in expertly curated vegetable
-          baskets delivered to you.
-        </p>
-      </div>
-      <div id="hero-img-container">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
-        
-          <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
-        
-          <img class="hero-image" src="./images/basket-mobile.jpg" srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
-        </picture>
-      </div>
-      <div class="menu">
+      <div class="menu ">
         <!--is-open-->
         <div class="close-btn">
           <svg class="icon">
@@ -67,6 +47,30 @@
         </div>
         <button id="shop-btn">SHOP NOW</button>
       </div>
+      <div class="menu-backdrop"></div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1>organic vegetables to your diet today!</h1>
+          <p class="hero-paragraph">
+            Our expertly curated vegetable baskets are made with the freshest,
+            highest quality vegetables available. Fresh Harvest Box has got you
+            covered. Fresh, high-quality vegetables in expertly curated vegetable
+            baskets delivered to you.
+          </p>
+        </div>
+        <div id="hero-img-container">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
+        
+            <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
+        
+            <img class="hero-image" src="./images/basket-mobile.jpg"
+              srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
+          </picture>
+        </div>
+      </section>
       <!--fatmanur How it Works Section-->
       <section class="how-it-works">
         <div class="how-it-works-container">
