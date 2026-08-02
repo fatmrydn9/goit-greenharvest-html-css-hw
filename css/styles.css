@@ -1,7 +1,14 @@
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -37,14 +44,15 @@ header {
   padding: 7px 5px;
 }
 
-.hamburger-menu > :not(:nth-child(2)) {
+.hamburger-menu> :not(:nth-child(2)) {
   display: block;
   width: 22px;
   height: 2.4px;
   background-color: #fbfbfb;
   border-radius: 2.4px;
 }
-.hamburger-menu > :nth-child(2) {
+
+.hamburger-menu> :nth-child(2) {
   display: block;
   width: 15px;
   height: 2.4px;
@@ -89,25 +97,25 @@ h1 {
 
 #hero-img-container {
   width: 100vw;
-    margin-left: calc(50% - 50vw);
-    min-width: 100%;
-    background-color: #576f35;
+  margin-left: calc(50% - 50vw);
+  min-width: 100%;
+  background-color: #576f35;
 }
 
 .hero-image {
   width: 100%;
-    min-width: 0;
-    background-color: #576f35;
-    display: block;
-    height: auto;
-    left: 0;
-    background-image:
-      linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-      image-set(url(./images/basket-mobile.jpg) 1x,
-        url(./images/basket-mobile@2x.jpg) 2x);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  min-width: 0;
+  background-color: #576f35;
+  display: block;
+  height: auto;
+  left: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+    image-set(url(./images/basket-mobile.jpg) 1x,
+      url(./images/basket-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .menu {
@@ -308,281 +316,6 @@ h1 {
   color: #141414;
 }
 
-/* berkay your order section */
-
-.harvest {
-  width: 400px;
-  margin: 0 auto;
-}
-
-.harvest-container {
-  background-color: #576F35;
-  width: 375px;
-  height: 1536px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.harvest-intro {
-  width: 335px;
-  height: 388px;
-  padding-top: 80px;
-  margin-bottom: 40px;
-}
-
-.harvest-title {
-  font-weight: 600;
-  color: #FBFBFB;
-  line-height: 52px;
-  font-size: 48px;
-  margin: 0;
-}
-
-.harvest-text {
-  font-family: 'Inter Tight', sans-serif;
-  color: #FBFBFB;
-  font-weight: 500;
-  max-width: 335px;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 20px 0 0 0;
-}
-
-.harvest-form-card {
-  background-color: #FBFBFB;
-  border-radius: 30px;
-  width: 335px;
-  height: 552px;
-  margin-bottom: 20px;
-}
-
-.harvest-form-title {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  min-height: 140px;
-  line-height: 28px;
-  margin: 40px 20px 40px 20px;
-  letter-spacing: -1.5%;
-}
-
-.accent-pink {
-  color:#D4BFC4;
-}
-
-.accent-chianti {
-  color: #7A3145;
-}
-
-.accent-green {
-  color: #6b8e4e;
-}
-
-.harvest-form {
-  padding: 0 20px 40px 20px;
-}
-
-.harvest-input{
-  height: 48px;
-  width: 295px;
-  margin-bottom: 16px;
-}
-
-.harvest-input,
-.harvest-textarea {
-  width: 100%;
-  border: 1px solid #858585;
-  border-radius: 30px;
-  padding: 16px 20px;
-  font-size: 14px;
-  font-family: 'Inter Tight', sans-serif;;
-}
-
-.harvest-textarea {
-  border-radius: 15px;
-  height: 92px;
-  resize: none;
-  margin-bottom: 20px;
-}
-
-.harvest-input::placeholder,
-.harvest-textarea::placeholder {
-  color: #141414;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.harvest-button {
-  width: 100%;
-  background-color: #7A3145;
-  color: #FBFBFB;
-  border: none;
-  border-radius: 30px;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  height: 52px;
-}
-
-.harvest-social-card {
-  background-color: #7A3145;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 30px;
-  width: 335px;
-  margin: 0 auto;
-  height: 456px;
-}
-
-.harvest-image {
-  width: 100%;
-  border-radius: 30px;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.harvest-social-text {
-  color: #D4BFC4;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0 0 16px 0;
-}
-
-.harvest-social-links {
-  display: flex;
-  flex-direction: column;
-  color: #FBFBFB;
-  font-weight: 600;
-  font-size: 18px;
-  max-width: 295px;
-  letter-spacing: -1.5%;
-  font-family: 'Inter Tight', sans-serif;
-  margin: 0 0 40px 0;
-  line-height: 20px;
-  gap: 8px;
-}
-
-.footer {
-  margin: 0 auto;
-  width: 400px;
-}
-
-.footer-container {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #7A3145;
-  width: 375px;
-  height: 584px;
-  margin: 0 auto;
-  padding: 40px 20px 80px 20px;
-  
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.footer-description {
-  font-family: 'Inter Tight', sans-serif;
-  color: #FBFBFB;
-  width: 335px;
-  max-width: 295px;
-  height: 60px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  margin: 0;
-  font-style: normal;
-  letter-spacing: 0%;
-}
-
-.footer-nav {
-  font-family: 'Inter Tight', sans-serif;
-  width: 227px;
-  height: 124px;
-  margin: 40px 0 40px 0;
-  letter-spacing: -1.5%;
-  line-height: 32px;
-  font-size: 32px;
-  font-weight: 600;
-}
-
-.footer-nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav-list li {
-  margin-bottom: 14px;
-}
-
-.footer-nav-link {
-  color: #FBFBFB;
-  font-size: 32px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.footer-phone {
-  font-weight: 700;
-  color: #FBFBFB;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-}
-
-.footer-address {
-  font-family: 'Inter Tight', sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  color: #FBFBFB;
-  margin: 14px 0 80px 0;
-  max-width: 179px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.footer-bottom {
-  width: 335px;
-  height: 56px;
-}
-
-.footer-links {
-  margin-bottom: 16px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-.footer-bottom-link {
-  color: #D4BFC4;
-  text-decoration: none;
-}
-
-.footer-divider {
-  color: #D4BFC4;
-  margin: 0 8px;
-}
-
-.footer-copyright {
-  font-family: 'Inter Tight', sans-serif;
-  color: #D4BFC4;
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-}
 .advertisement {
   width: 100%;
   padding: 80px 20px;
@@ -620,7 +353,8 @@ h1 {
   color: #fbfbfb;
   background-color: #576f35;
 }
-/* Vegetables */ 
+
+/* Vegetables */
 
 .vegetables {
   padding: 80px 20px;
@@ -677,7 +411,7 @@ h1 {
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   gap: 40px;
 }
 
@@ -697,7 +431,7 @@ h1 {
 }
 
 .reviews-container h2>span {
-  color: #576F35;
+  color: #576f35;
 }
 
 .reviews-container p {
@@ -724,7 +458,6 @@ h1 {
   margin: 0;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -733,9 +466,9 @@ h1 {
 
 .carousel-card {
   flex: 0 0 335px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding: 20px 16px;
-  border: 1px solid #D4BFC4;
+  border: 1px solid #d4bfc4;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -764,4 +497,816 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+/* berkay your order section */
+
+.harvest {
+  width: 100%;
+}
+
+.harvest-container {
+  background-color: #576f35;
+  width: 375px;
+  height: 1536px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.harvest-intro {
+  width: 335px;
+  height: 388px;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+.harvest-title {
+  font-weight: 600;
+  color: #fbfbfb;
+  line-height: 52px;
+  font-size: 48px;
+  margin: 0;
+}
+
+.harvest-text {
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
+  font-weight: 500;
+  max-width: 335px;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0 0 0;
+}
+
+.harvest-cards-total {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.harvest-form-card {
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  width: 335px;
+  height: 552px;
+}
+
+.harvest-form-card-content {
+  padding: 40px 20px;
+}
+
+.harvest-form-title {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  min-height: 140px;
+  line-height: 28px;
+  letter-spacing: -1.5%;
+  margin: 0 0 40px 0;
+}
+
+.accent-pink {
+  color: #d4bfc4;
+}
+
+.accent-chianti {
+  color: #7a3145;
+}
+
+.accent-green {
+  color: #576f35;
+}
+
+.harvest-input {
+  height: 48px;
+  width: 295px;
+  margin-bottom: 16px;
+}
+
+.harvest-input,
+.harvest-textarea {
+  width: 100%;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.harvest-textarea {
+  border-radius: 15px;
+  height: 92px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.harvest-input::placeholder,
+.harvest-textarea::placeholder {
+  color: #141414;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.harvest-button {
+  width: 100%;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 52px;
+}
+
+.harvest-social-card {
+  background-color: #7a3145;
+  border-radius: 30px;
+  width: 335px;
+  height: 456px;
+  padding: 40px 20px;
+}
+
+.harvest-image {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.harvest-social-text {
+  color: #d4bfc4;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 16px 0;
+}
+
+.harvest-social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 295px;
+  letter-spacing: -1.5%;
+  font-family: "Inter Tight", sans-serif;
+  line-height: 20px;
+  gap: 8px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #7a3145;
+  width: 375px;
+  height: 584px;
+  margin: 0 auto;
+  padding: 40px 20px 80px 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  width: 168px;
+  height: 16px;
+}
+
+.footer-description {
+  font-family: "Inter Tight", sans-serif;
+  color: #fbfbfb;
+  width: 335px;
+  max-width: 295px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+  font-style: normal;
+  letter-spacing: 0%;
+}
+
+.footer-nav {
+  font-family: "Inter Tight", sans-serif;
+  width: 227px;
+  height: 124px;
+  margin: 40px 0 40px 0;
+  letter-spacing: -1.5%;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-list li {
+  margin-bottom: 14px;
+}
+
+.footer-nav-link {
+  color: #fbfbfb;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-weight: 700;
+  color: #fbfbfb;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.footer-address {
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: #fbfbfb;
+  margin: 14px 0 80px 0;
+  max-width: 179px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footer-bottom {
+  width: 335px;
+  height: 56px;
+}
+
+.footer-links {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.footer-bottom-link {
+  color: #d4bfc4;
+  text-decoration: none;
+}
+
+.footer-divider {
+  color: #d4bfc4;
+  margin: 0 8px;
+}
+
+.footer-copyright {
+  font-family: "Inter Tight", sans-serif;
+  color: #d4bfc4;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* TABLET:768px */
+@media screen and (min-width: 768px) {
+  .harvest {
+    width: 100%;
+    margin: 0;
+  }
+
+  .harvest-container {
+    width: 768px;
+    height: 1720px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .harvest-intro {
+    width: 640px;
+    height: 276px;
+    margin: 100px 96px 52px 32px;
+    padding: 0;
+  }
+
+  .harvest-title {
+    width: 640px;
+    min-height: 192px;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1.5%;
+    font-weight: 600;
+  }
+
+  .harvest-title br {
+    display: none;
+  }
+
+  .harvest-text {
+    min-width: 640px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0 0 0;
+    letter-spacing: 0;
+  }
+
+  .harvest-cards-total {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .harvest-form-card {
+    width: 640px;
+    height: 632px;
+    padding: 72px 100px;
+  }
+
+  .harvest-form-card-content {
+    width: 440px;
+    height: 488px;
+    padding: 0;
+  }
+
+  .harvest-form-title {
+    width: 440px;
+    min-height: 128px;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 52px 0;
+    letter-spacing: -1.5%;
+  }
+
+  .harvest-form-title br {
+    display: none;
+  }
+
+  .harvest-form {
+    padding: 0;
+    width: 440px;
+    height: 232px;
+  }
+
+  .harvest-input {
+    height: 52px;
+    margin-bottom: 16px;
+  }
+
+  .harvest-textarea {
+    height: 96px;
+    margin-bottom: 24px;
+  }
+
+  .harvest-input,
+  .harvest-textarea {
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .harvest-button {
+    width: 100%;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1.5%;
+    line-height: 20px;
+  }
+
+  .harvest-social-card {
+    width: 640px;
+    height: 528px;
+    padding: 52px;
+    box-sizing: border-box;
+  }
+
+  .harvest-image {
+    width: 536px;
+    height: 316px;
+    margin: 0 0 52px 0;
+  }
+
+  .harvest-social-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    width: 243px;
+    height: 20px;
+  }
+
+  .harvest-social-links {
+    display: flex;
+    flex-direction: row;
+    max-width: 492px;
+    height: 20px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    gap: 12px;
+    letter-spacing: -1.5%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 768px;
+    height: 476px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 704px;
+    height: 292px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+
+  .footer-left {
+    width: 265px;
+    height: 104px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 228px;
+  }
+
+  .footer-logo {
+    margin-bottom: 24px;
+    width: 216px;
+    height: 20px;
+  }
+
+  .footer-logo img {
+    width: 216px;
+    height: 20px;
+  }
+
+  .footer-description {
+    width: 265px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .footer-nav {
+    margin: 0;
+    width: 227px;
+    height: 144px;
+  }
+
+  .footer-nav-list li {
+    margin-bottom: 24px;
+  }
+
+  .footer-nav-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-contacts {
+    width: 215px;
+    height: 84px;
+    margin: 0;
+  }
+
+  .footer-phone,
+  .footer-address {
+    font-size: 16px;
+  }
+
+  .footer-address {
+    margin: 24px 0 0;
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    width: 704px;
+    margin: 0;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links {
+    width: 229px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Inter Tight", sans-serif;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    height: 20px;
+    font-weight: 500;
+  }
+
+  .footer-divider {
+    margin: 0;
+  }
+}
+
+/* DESKTOP: 1280px */
+@media screen and (min-width: 1280px) {
+  .harvest {
+    width: 100%;
+  }
+
+  .harvest-container {
+    width: 1280px;
+    height: 1036px;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 52px;
+  }
+
+  .harvest-cards-total {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .harvest-intro {
+    width: 751px;
+    height: 192px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .harvest-title {
+    width: 751px;
+    min-height: 128px;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1.5%;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .harvest-title br {
+    display: none;
+  }
+
+  .harvest-text {
+    min-width: 751px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0 0 0;
+    letter-spacing: 0;
+  }
+
+  /* Sol kart */
+  .harvest-form-card {
+    width: 524px;
+    height: 592px;
+    margin: 0;
+    padding: 52px 48px;
+    box-sizing: border-box;
+  }
+
+  .harvest-form-title {
+    min-width: 428px;
+    min-height: 128px;
+    margin: 0 0 52px 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    font-weight: 600;
+  }
+
+  .harvest-form-title br {
+    display: none;
+  }
+
+  .harvest-form {
+    padding: 0;
+    width: 428px;
+    height: 232px;
+  }
+
+  .harvest-input {
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+
+  .harvest-input,
+  .harvest-textarea {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .harvest-input::placeholder,
+  .harvest-textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .harvest-textarea {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .harvest-button {
+    width: 100%;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .harvest-social-card {
+    min-width: 524px;
+    min-height: 592px;
+    padding: 52px 48px;
+    box-sizing: border-box;
+  }
+
+  .harvest-image {
+    width: 428px;
+    height: 352px;
+    margin: 0 0 80px 0;
+    border-radius: 15px;
+  }
+
+  .harvest-social-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #d4bfc4;
+    margin: 0 0 16px 0;
+  }
+
+  .harvest-social-links {
+    display: flex;
+    flex-direction: row;
+    max-width: 386px;
+    height: 20px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    gap: 12px;
+    letter-spacing: -1.5%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 1280px;
+    height: 392px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 52px 100px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 124px;
+    width: 100%;
+  }
+
+  .footer-left {
+    width: 265px;
+    margin-right: 250px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    gap: 121px;
+    width: 565px;
+    height: 144px;
+  }
+
+  .footer-logo {
+    margin-bottom: 24px;
+    width: 216px;
+    height: 20px;
+  }
+
+  .footer-logo img {
+    width: 216px;
+    height: 20px;
+  }
+
+  .footer-description {
+    min-width: 265px;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .footer-nav {
+    margin: 0;
+    width: 228px;
+    height: 144px;
+  }
+
+  .footer-nav-list li {
+    margin-bottom: 24px;
+  }
+
+  .footer-nav-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-contacts {
+    width: 216px;
+    min-height: 84px;
+    margin: 0;
+  }
+
+  .footer-phone,
+  .footer-address {
+    font-size: 16px;
+  }
+
+  .footer-address {
+    margin: 24px 0 0;
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    width: 1080px;
+    margin-top: auto;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links {
+    width: 565px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Inter Tight", sans-serif;
+    margin: 0;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    height: 20px;
+    font-weight: 500;
+  }
 }
