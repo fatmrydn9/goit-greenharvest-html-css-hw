@@ -37,24 +37,8 @@ header {
 
 .hamburger-menu {
   height: 32px;
-  padding: 7px 5px;
 }
 
-.hamburger-menu> :not(:nth-child(2)) {
-  display: block;
-  width: 22px;
-  height: 2.4px;
-  background-color: #fbfbfb;
-  border-radius: 2.4px;
-}
-
-.hamburger-menu> :nth-child(2) {
-  display: block;
-  width: 15px;
-  height: 2.4px;
-  background-color: #fbfbfb;
-  border-radius: 2.4px;
-}
 
 main {
   width: 100%;
