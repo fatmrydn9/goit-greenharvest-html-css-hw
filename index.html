@@ -20,37 +20,28 @@
     <header>
       <div id="header-content">
         <div class="logo-container">
-          <div class="logo">
-            <img src="./images/logo-mobile.svg" alt="logo" />
-          </div>
+          <a href="#" class="logo">
+            <img
+              src="./images/logo-mobile.svg"
+              class="mobile-logo"
+              alt="Logo"
+            />
+            <img src="./images/logo.svg" class="tablet-logo" alt="Logo" />
+          </a>
         </div>
         <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg class="icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="hero-section">
-        <h1>organic vegetables to your diet today!</h1>
-        <p class="hero-paragraph">
-          Our expertly curated vegetable baskets are made with the freshest,
-          highest quality vegetables available. Fresh Harvest Box has got you
-          covered. Fresh, high-quality vegetables in expertly curated vegetable
-          baskets delivered to you.
-        </p>
-      </div>
-      <div id="hero-img-container">
-        <img
-          class="hero-image"
-          src="./images/basket-mobile.jpg"
-          alt="basket full of vegetables"
-        />
       </div>
       <div class="menu">
         <!--is-open-->
-        <div class="close-btn"></div>
+        <div class="close-btn">
+          <svg class="icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </div>
         <div class="menu-container">
           <ul class="menu-list">
             <li><a href="#">How İt Works</a></li>
@@ -60,15 +51,58 @@
         </div>
         <button id="shop-btn">SHOP NOW</button>
       </div>
+      <div class="menu-backdrop"></div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1>organic vegetables to your diet today!</h1>
+          <p class="hero-paragraph">
+            Our expertly curated vegetable baskets are made with the freshest,
+            highest quality vegetables available. Fresh Harvest Box has got you
+            covered. Fresh, high-quality vegetables in expertly curated vegetable
+            baskets delivered to you.
+          </p>
+        </div>
+        <div id="hero-img-container">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./images/basket-desktop.jpg 1x, ./images/basket-desktop@2x.jpg 2x">
+        
+            <source media="(min-width: 768px)" srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x">
+        
+            <img class="hero-image" src="./images/basket-mobile.jpg"
+              srcset="./images/basket-mobile.jpg 1x, ./images/basket-mobile@2x.jpg 2x" alt="Description of the image">
+          </picture>
+        </div>
+      </section>
       <!--fatmanur How it Works Section-->
       <section class="how-it-works">
         <div class="how-it-works-container">
           <div class="how-it-works-image-box">
-            <img
-              class="how-it-works-image"
-              src="./images/woman-cooking-mobile.jpg"
-              alt="Woman preparing vegetables"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/woman-cooking-desktop.jpg    1x,
+                  ./images/woman-cooking-desktop@2x.jpg 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/woman-cooking-tablet.jpg    1x,
+                  ./images/woman-cooking-tablet@2x.jpg 2x
+                "
+              />
+
+              <img
+                class="how-it-works-image"
+                src="./images/woman-cooking-mobile.jpg"
+                srcset="./images/woman-cooking-mobile@2x.jpg 2x"
+                alt="Woman preparing vegetables"
+              />
+            </picture>
           </div>
           <div class="ordering-steps">
             <h2 class="ordering-steps-title">
