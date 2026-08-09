@@ -66,12 +66,12 @@
           </p>
         </div>
         <div id="hero-img-container">
-          <picture fetchpriority=high>
+          <picture>
             <source media="(min-width: 1280px)" srcset="./images/basket-desktop.webp 1x, ./images/basket-desktop@2x.webp 2x">
         
             <source media="(min-width: 768px)" srcset="./images/basket-tablet.webp 1x, ./images/basket-tablet@2x.webp 2x">
         
-            <img class="hero-image" src="./images/basket-mobile.webp"
+            <img class="hero-image" src="./images/basket-mobile.webp" fetchpriority=high
               srcset="./images/basket-mobile.webp 1x, ./images/basket-mobile@2x.webp 2x" alt="Description of the image">
           </picture>
         </div>
@@ -99,7 +99,7 @@
 
               <img
                 class="how-it-works-image"
-                src="./images/woman-cooking-mobile.webp"
+                src="./images/woman-cooking-mobile.webp" fetchpriority=high
                 srcset="./images/woman-cooking-mobile@2x.webp 2x"
                 alt="Woman preparing vegetables"
               />
@@ -343,7 +343,7 @@
 
               <img
                 class="harvest-image"
-                src="./images/smoothie-mobile@2x.webp"
+                src="./images/smoothie-mobile@2x.webp" fetchpriority=high
                 alt="Smoothie photo"
               />
             </picture>
